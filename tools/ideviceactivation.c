@@ -595,6 +595,7 @@ int main(int argc, char *argv[])
 			if (plist_get_node_type(state) == PLIST_STRING) {
 				char *s_state = NULL;
 				plist_get_string_val(state, &s_state);
+			    result = EXIT_SUCCESS;
 				printf("ActivationState: %s\n", s_state);
 				free(s_state);
 			} else {
